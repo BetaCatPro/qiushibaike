@@ -54,6 +54,40 @@
 		{
 			"path": "pages/news/news",
 			"style": {}
+		},
+		{
+			"path" : "pages/search/search",
+			"style" : {
+				"enablePullDownRefresh":true,
+				"app-plus":{
+					// 隐藏滚动条
+					"scrollIndicator":"none",
+					"bounce":"none",
+					"titleNView":{
+						"autoBackButton":false, //导航返回按钮
+						// 搜索框配置
+						"searchInput":{
+							"align":"left",
+							"placeholder":"搜索糗事",
+							"backgroundColor":"#F7F7F7",
+							"borderRadius":"4px",
+							"placeholderColor":"#CCCCCC",
+							"disabled":false
+						},
+						// 配置按钮
+						"buttons":[
+							// 右边
+							{
+								"color":"#000000",
+								"colorPressed":"#BBBBBB",
+								"float":"right",
+								"fontSize":"16px",
+								"text":"取消"
+							}
+						]
+					}
+				}
+			}
 		}
 	],
 	"globalStyle": {
