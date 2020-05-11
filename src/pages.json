@@ -88,6 +88,20 @@
 					}
 				}
 			}
+		},
+		{
+			"path" : "pages/add-input/add-input",
+			"style" : {
+				"app-plus":{
+					"animationType":"slide-in-bottom",
+					"animationDuration":200,
+					"titleNView":false
+				}
+			}
+		},
+        {
+			"path" : "components/common/uploud-images/uploud-images",
+			"style" : {}
 		}
 	],
 	"globalStyle": {
