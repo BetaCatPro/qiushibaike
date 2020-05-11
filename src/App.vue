@@ -13,5 +13,11 @@
 </script>
 
 <style>
+    /*官方图表库*/
+    @import "../common/uni.css";
+    /*自定义图表库*/
+    @import "../common/icon.css";
+    /*动画库*/
+    @import "../common/animate.css";
 	/*每个页面公共css */
 </style>

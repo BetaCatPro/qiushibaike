@@ -66,6 +66,7 @@
     "postcss-comment": "^2.0.0",
     "vue-template-compiler": "^2.6.11"
   },
+  "sitemapLocation":"sitemap.json",
   "browserslist": [
     "Android >= 4",
     "ios >= 8"
