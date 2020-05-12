@@ -20,10 +20,10 @@
 	export default {
 		data() {
 			return {
-				issearch:false, // 搜索是否有内容
+				issearch:false, //搜索是否有内容
 				loadtext:"上拉加载更多",
 				list:[],
-				searchtext:"", // 搜索内容
+				searchtext:"", 搜索内容
 			}
 		},
 		components:{
@@ -129,7 +129,8 @@
 					this.list.push(obj);
 					this.loadtext = "上拉加载更多";
 				},1000)
-			}
+			},
+			
 		}
 	}
 </script>

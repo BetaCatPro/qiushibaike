@@ -49,58 +49,57 @@
 </template>
 
 <script>
-    export default {
-        props: {
-            item: Object,
-            index: Number
-        },
-        data() {
-            return {
-                isguanzhu: this.item.isguanzhu,
-                infonum:this.item.infonum
-            }
-        },
-        methods: {
-            guanzhu() {
-                this.isguanzhu = true;
-                uni.showToast({
-                    title: "关注成功"
-                })
-            },
-            caozuo(type) {
-                // 笑脸和哭脸
-                switch (type) {
-                    case "ding":
-                        if (this.infonum.index == 1) {
-                            return;
-                        }
-                        this.infonum.dingnum++;
-                        if (this.infonum.index == 2) {
-                            this.infonum.cainum--;
-                        }
-                        this.infonum.index = 1;
-                        break;
-                    case "cai":
-                        if (this.infonum.index == 2) {
-                            return;
-                        }
-                        this.infonum.cainum++;
-                        if (this.infonum.index == 1) {
-                            this.infonum.dingnum--;
-                        }
-                        this.infonum.index = 2;
-                        break;
-                }
-            },
-            opendetail(){
-                // 进入详情页
-//                uni.navigateTo({
-//                    url:'../../pages/detail/detail?detailData=' + JSON.stringify(this.item)
-//                })
-				console.log('to')
-            }
-        }
-    }
+	export default {
+		props: {
+			item: Object,
+			index: Number
+		},
+		data() {
+			return {
+				isguanzhu: this.item.isguanzhu,
+				infonum:this.item.infonum
+			}
+		},
+		methods: {
+			guanzhu() {
+				this.isguanzhu = true;
+				uni.showToast({
+					title: "关注成功"
+				})
+			},
+			caozuo(type) {
+				// 笑脸和哭脸
+				switch (type) {
+					case "ding":
+						if (this.infonum.index == 1) {
+							return;
+						}
+						this.infonum.dingnum++;
+						if (this.infonum.index == 2) {
+							this.infonum.cainum--;
+						}
+						this.infonum.index = 1;
+						break;
+					case "cai":
+						if (this.infonum.index == 2) {
+							return;
+						}
+						this.infonum.cainum++;
+						if (this.infonum.index == 1) {
+							this.infonum.dingnum--;
+						}
+						this.infonum.index = 2;
+						break;
+				}
+			},
+			opendetail(){
+				// 进入详情页
+				uni.navigateTo({
+					url:'../../pages/detail/detail?detailData=' + JSON.stringify(this.item)
+				})
+			}
+		}
+	}
 </script>
 
 <style>
